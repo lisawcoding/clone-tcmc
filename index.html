@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>台雞店</title>
+	<link rel="icon" href="img/chicken.png">
+	<!-- responsive -->
+	<link rel="stylesheet" type="text/css" href="tcmc.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">    
+
+</head>
+<body>
+	<div id="Nav">
+		<a href="#"><img src="img/chicken.png" id="logo"></a>
+		<div id="topNav">
+			<ul>
+				<li class="border-right"><a href="#">會員登入</a></li>
+				<li class="border-right"><a href="#">ChiShop-Online&trade;</a></li>
+				<!-- <li class="border-right"><a href="#">Supplier</a></li> -->
+				<li class="border-right"><a href="#">網站地圖</a></li>	
+				<li><a href="#">English</a></li>
+				<li><a href="#" class="myactive">繁中</a></li>
+				<li><a href="#">簡中</a></li>
+				<li><a href="#">日本語</a></li>
+				<li>
+					<form id="searchGroup" method="get" action="https://www.google.com/search?q=[value from input-field"><!-- enable google search -->
+						<input type="text" name="q" placeholder="Search" id="search" value="">
+						<button type="submit" id="go" name="submit" value="GO">GO</button>
+					</form>
+				</li>
+			</ul>	
+		</div>
+
+		<div id="btnNav">
+			<ul>
+				<li>	
+					<div class="dropdown">
+					  <button class="dropbtn"><a href="#" class="special">專業XXXXXX製造服務</a></button>
+					  <div class="dropdown-content">
+					  		<div class=inside>
+							<a href="#">專業技術</a>
+							<a href="#">卓越製造</a>
+							<a href="#">晶圓製造服務</a>
+							<a href="#">開放創新平台</a>
+							<a href="#">台雞大同盟</a>
+							</div>
+					  </div>
+					</div>  
+				</li>
+				<li>	
+					<div class="dropdown">
+					  <button class="dropbtn"><a href="#">投資人關係</a></button>
+					  <div class="dropdown-content">
+					  		<div class=inside>
+							<a href="#">財務資訊</a>
+							<a href="#">公司年報</a>
+							<a href="#">公司治理</a>
+							<a href="#">股東專欄</a>
+							<a href="#">營運報告行事曆</a>
+							<a href="#">問答集</a>
+							</div>
+					  </div>
+					</div>  
+				</li>
+				<li>	
+					<div class="dropdown">
+					  <button class="dropbtn"><a href="#">新聞中心</a></button>
+					  <div class="dropdown-content">
+					  		<div class=inside>
+							<a href="#">最新消息</a>
+							<a href="#">新聞集錦</a>
+							<a href="#">活動訊息</a>
+							<a href="#">影像資料</a>
+							<a href="#">資料中心</a>
+							<a href="#">經營團隊</a>
+							</div>
+					  </div>
+					</div>  
+				</li>
+				<li>	
+					<div class="dropdown">
+					  <button class="dropbtn"><a href="#">人才招募</a></button>
+					  <div class="dropdown-content">
+					  		<div class=inside>
+							<a href="#">選擇台雞</a>
+							<a href="#">開啟職涯</a>
+							<a href="#">加入台雞</a>
+							</div>
+					  </div>
+					</div>  
+				</li>
+				<li>	
+					<div class="dropdown">
+					  <button class="dropbtn"><a href="#">企業社會責任</a></button>
+					</div>  
+				</li>
+				<li>	
+					<div class="dropdown">
+					  <button class="dropbtn"><a href="#">關於台雞公司</a></button>
+					  <div class="dropdown-content" id="lasDropdown">
+					  		<div class=inside>
+							<a href="#">願景與使命</a>
+							<a href="#">企業核心價值與經營理念</a>
+							<a href="#">公司資訊</a>
+							<a href="#">品質政策</a>
+							<a href="#">業務服務</a>
+							<a href="#">晶圓廠區</a>
+							<a href="#">台雞店文教基金會</a>
+							<a href="#">聯絡人</a>
+							</div>
+					  </div>
+					</div>  
+				</li>
+			</ul>
+		</div>
+	</div><!-- header -->
+		<div id="div2">
+			<div id="div2Left">
+ 				<a href="http://www.google.com"><img name="slide" class="mainSlide fadeIn" src="img/img1.jpg"></a>
+ 				<a href="http://www.google.com"><img name="slide" class="mainSlide fadeIn" src="img/img2.jpg"></a>
+ 				<a href="http://www.google.com"><img name="slide" class="mainSlide fadeIn" src="img/img3.jpg"></a>
+ 				<a href="http://www.google.com"><img name="slide" class="mainSlide fadeIn" src="img/img4.jpg"></a>
+ 				<a href="http://www.google.com"><img name="slide" class="mainSlide fadeIn" src="img/img5.jpg"></a>
+ 				<div id="dotBar">
+	 				<div style="text-align:center">
+					  <span class="dot" onclick="dotClick(0)">1</span> 
+					  <span class="dot" onclick="dotClick(1)">2</span> 
+					  <span class="dot" onclick="dotClick(2)">3</span> 
+					  <span class="dot" onclick="dotClick(3)">4</span> 
+					  <span class="dot" onclick="dotClick(4)">5</span> 
+					  <span class="videos">all videos</span>
+					</div>
+				</div>
+
+ 				<div id="pop">
+					<!--<div id="pop-arrow"><i class="fas fa-caret-down"></i></div>-->
+					<div id="pop-menu">
+						<a href="#"><img class="small-img" src="img/img1.jpg"></a>
+		 				<a href="#"><img class="small-img" src="img/img2.jpg"></a>
+		 				<a href="#"><img class="small-img" src="img/img3.jpg"></a>
+		 				<a href="#"><img class="small-img" src="img/img4.jpg"></a>
+		 				<a href="#"><img class="small-img" src="img/img5.jpg"></a>
+					</div>
+				</div> 
+			</div>
+
+			<div id="div2Right">
+				<img src="http://www.tsmc.com.tw/common/img/banner/banner_30th-hl_ch.jpg?20171025" style="height:310px">
+			</div><!-- div2Right -->
+		</div><!-- div2 -->
+
+		<!-- div3 -->
+		<div id="div3">
+			<div id="div31">
+				<h5>焦點資訊
+				<span>
+					<div id="previous"><div></div></div>
+					<div id="next"><div></div></div></h5>
+				</span>
+				<!--<span id="previous">-->
+					<!--<img src="img/leftArrow.jpg" style="margin-left: 25px">-->
+					<!--</span><span><img src="img/rightArrow.jpg" id="next">-->
+					<!--</span>-->		
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus1.png">
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus2.png">
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus3.png">
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus4.png">
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus5.png">
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus6.png">
+				<img name="slideSmall" class="smallPhoto fadeIn" src="img/focus7.png">
+			</div>
+			<div id="div32">			
+				<h5><a href="#" id="news">最新消息</a>
+					<span>
+						<div id="next"><div></div></div>
+					</span>
+				</h5>
+				<p><a href="#">台雞公司2018年7月營收報告(2018/08/10)</a></p>
+				<p><a href="#">台雞公司公布電腦病毒感染事件影響(2018/08/05)</a></p>
+			</div>
+			<div id="div33">
+				<h5><a href="#">活動資訊</a>
+					<span>
+						<div id="next"><div></div></div>
+					</span>
+				</h5>
+				<p><a href="#">2018 年第二季法人說明會網路重播 台北 (2018/07/19)</a></p>
+				<p><a href="#">2018 技術論壇 <img src="img/newBtn.jpg" style="width:25px; height:15px"></a></p>
+				<p><a href="#">2018 Open Innovation Platform® Ecosystem Forum</a></p>
+				<p><a href="#">2018 校園徵才暨實習計畫</a></p>
+				<p><a href="#">2018 台雞設備創意競賽</a></p>
+			</div>
+			<div id="div34">
+				<h5>
+					熱門連結
+				</h5>
+				<p><a href="#">創辦人王阿婷博士演講集</a></p>
+				<p><a href="#">公司年報</a></p>
+				<p><a href="#">台雞店文教基金會</a></p>
+				<p><a href="#">企業社會責任報告</a></p>
+				<p><a href="#">台雞晶園雜誌</a></p>
+				<p><a href="#">台雞創新館</a></p>
+			</div>
+		</div><!-- div3 -->
+		<!-- div4*******************************************************************************-->
+		<div id="div4">
+			<div id="div41">
+				<h5><a href="#">TSMC-Online</a></h5>
+				<p><a href="#">台雞公司客戶入口網站。</a></p>
+			</div>
+			<div id="div42">
+				<div class="vl"></div>
+				<h5><a href="#">供應商網站平台</a></h5>
+				<p><a href="#">台雞公司供應商網路平台，一個更聰明的交易平台。</a></p>
+				<div class="vl"></div>
+			</div>
+			<div id="div43">
+				<h5><a href="#">資料中心</a></h5>
+				<p><a href="#">閱讀更多台雞公司資訊。</a></p>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footerLeft">Inspire The Future&reg;</div>
+			<div id="footerRight">
+				<li><a href="#">首頁</a></li>
+				<li><a href="#">與我們聯繫</a></li>
+				<li><a href="#">網站地圖</a></li>
+				<li><a href="#">問答集</a></li>
+				<li><a href="#">法律與商標</a></li>
+				<li><a href="#">隱私及Cookies政策</a></li>
+			</div>
+		</div>
+		<div id="declare">
+			<p>此網站只是用來練習用，並非真的公司行號~~是假的</p>
+		</div>
+
+	
+	<!-- my js file -->
+	<script type="text/javascript" src="tcmc.js"></script>
+</body>
+</html>
