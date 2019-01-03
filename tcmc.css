@@ -1,0 +1,437 @@
+*{
+	margin:0 auto;/*center content*/
+}
+
+body{
+    background: gray; /* For browsers that do not support gradients */
+    background: linear-gradient(black, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*set background in the middle of the page*/
+    background-position: center; 
+    height:500px;
+    font-family: "Arial", "Helvetica", "sans-serif";
+    line-height: 1.25em;
+    border-top: 5px solid #f50000;
+}
+
+/***********************************************************************************/
+a {
+    cursor: pointer;
+}
+
+#Nav {
+    position: relative;
+    font-size: 11px;
+    color: #999999;
+    width:940px;
+    height: 87px; 
+}
+
+#logo {
+    width:120px;
+	height:87px;
+	float: left;
+}
+
+#topNav{
+	float:right;
+    padding-top: 16.8px;
+}	
+
+#topNav li{
+	display: inline;
+}
+
+#topNav li a{
+    text-decoration: none;
+    padding:3px;
+    color:#999999;
+    font-size: 11px;
+    height:42px;
+}
+
+.border-right{
+	border-right:1px white solid;
+	padding:0 12px; 	
+}
+
+#search {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-size: 11px;
+    color: #7D7D7D;
+    background-color: #2E2E2E;
+    border-color: #7D7D7D;
+    padding-left: 7px;
+    padding-top: 1px;
+    height: 16px;
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    border-left: 1px solid #555555;
+    border-right: 1px solid #000000;
+}
+#go{
+    background: linear-gradient(#7D7D7D, black);
+    padding:1px 7px 0px 7px;
+    color:#999999;
+    font-weight: 900;
+}
+#searchGroup, #go {float: right;} /*search box and go button side by side*/
+#btnNav{
+	float:right;
+    height: 45px;
+}
+#btnNav li{
+	display:inline;
+}
+.dropbtn a{
+    text-shadow: 1px 1px 2px grey;
+    font-weight: 700;
+	text-decoration: none;
+  	color: #999999;
+	font-size: 15px;
+}
+button{
+	padding: 0;
+	border: none;
+	background: none;
+}
+/*********dropdown menu from w3c***************************************/
+.dropbtn {
+    padding: 12px;
+    font-size: 15px;
+    color:linear-gradient(pink,green);
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    height: 45px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width:200px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#lasDropdown {right:0;}
+.inside {
+	width:170px;
+	padding:10px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 3px 5px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px dotted #999999;
+}
+.dropdown-content a:nth-last-of-type(1){ /*nth-of-type()~~only used in tag*/
+	border-bottom: none;
+}
+
+a:hover, .myactive{
+    text-decoration: none !important; color: #f50000 !important;
+}
+.dropdown:hover .dropdown-content {display: block; }
+
+.dropdown:hover .dropbtn {background-color: #f6f6f6;}
+
+/******************div2************************************************/
+#div2{
+    width:940px;
+    height:310px;
+    font-size:0.7rem;
+}
+#div2Left {
+    width:727px;
+    float:left;
+    background:#fff;
+}
+#div2Left .mainSlide{
+    display:none;
+}
+#div2Left .mainSlide:noth-of-type(1){
+    display: block;
+}
+#dotBar {
+    background: rgba(0,0,0,0.5);
+    padding-left: 15px;
+    position: absolute;
+    margin-top:-28px;
+    width:712px;
+    height:28px;
+}
+.dot {
+    float:left;
+    margin: 5px 2px;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    background-color: #bbb;
+    border-radius: 10%;
+    display: inline-block;
+}
+.videos{
+    float:left;
+    margin: 5px 2px;
+    width:60px;
+    height: 18px;
+    background-color: #bbb;
+    border-radius: 5%;
+    display: inline-block;
+    cursor:pointer;
+}
+.videos:hover{
+    color:red;
+    background-color: #fff;
+}
+.active, .dot:hover {
+  background-color: #FFF;
+}
+#pop-menu{
+    width:940px;
+    height: 85px;
+    background:rgba(0,0,0,0.9);
+    position: absolute;
+    margin-top:15px;
+    transition: all 0.5s ease;
+}
+#pop-menu:before{
+    content: "";
+    border-bottom: 20px solid rgba(0,0,0,0.9);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 20px;
+	width: 72px;
+	position: absolute;
+	top:-35px;
+	left:350px;
+	cursor: pointer;
+}
+#pop-menu:after{
+    content: "";
+    width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid red;
+	position: absolute;
+	top:-12px;
+	left:400px;
+}
+#pop-arrow i{
+    color:red;
+    font-size: 1.2rem;
+}
+#pop-menu img{
+    border:1px solid grey;
+    width:92px;
+    height:50px;
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+    margin:auto 10px;
+}
+#pop-menu a:nth-of-type(1){
+    margin-left: 72px;
+}
+#pop-menu img:hover{
+    border:1px solid #fff;
+}
+
+/*divRight********************************************************************/
+#div2Right {
+    width:213px;
+    float:right;
+}
+/*div3***********************************************************************/
+#div3{
+    z-index: 99;
+    position: sticky;
+}
+#div3{
+    padding: 25px 15px 10px 15px;
+    min-height: 155px;
+    background: linear-gradient(#ffffff, #eaeaea);
+    width:910px;
+    height: 244px;
+}
+#div3 div{
+    float:left;
+}
+#div31 {
+    width:270px;
+    height: 200px;
+}
+#div32, #div33, #div34{
+    width:200px;
+    height:200px;
+}
+#div3 .smallPhoto{
+    display: none;
+}
+#div3 .smallPhoto:nth-of-type(1){
+    display: block;
+}
+#div3 h5, #div3 h5 a{
+    color:grey;
+    letter-spacing:2px;
+    text-decoration: none;
+    font-size:1rem;
+    margin-bottom: 12px;
+}
+#div3 h5 span{
+    float:right;
+    margin-right: 100px
+}
+#div3 #previous, #next{
+    width:30px;
+    height:15px;
+    background:lightgrey;
+    border:1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+#div3 #next{
+    border-radius: 0 5px 5px 0;
+}
+#div3 #previous div ,#next div{
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid red;
+    border-bottom: 5px solid transparent;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+#div3 #next div{
+    border-left:10px solid red;
+    border-right:0;
+}
+#div32 #next, #div33 #next{
+    width:20px;
+    background:#000;
+    border-radius: 5px 5px 5px 5px;
+}
+#div32 #next div, #div33 #next div{
+     border-left:10px solid lightgrey;
+}
+#div32 h5:hover #next div, #div33 h5:hover #next div{
+     border-left:10px solid red;   
+}
+#div32 h5, #div33 h5{
+    cursor:pointer;
+}
+#div32 h5:hover a, #div33 h5:hover a{
+    color:red;
+}
+
+#div3 a, #div4 a{
+        color:#333333;
+        font-size: 10px;
+}
+#div3 p a:hover, #div4 p a:hover{
+    text-decoration: underline !important;
+}
+/*div4*******************************************************************************/
+#div4 {
+    width:940px;
+    height:76px;
+    background:#e0e0e0;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+#div41, #div42, #div43{
+    width:260px;
+    height: 72px;
+    display: inline-block;
+    padding-top:15px;
+    padding-left: 37px;
+    line-height: 17px;
+}
+.vl{
+    border-left:2px solid green;
+/*border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); */
+}
+#div4 a{
+    font-size:10px;
+    margin:0;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px grey;
+    text-decoration: none;
+}
+#div4 h5 a{
+    font-size: 14px;
+    font-weight: 900;
+}
+#div4 h5:hover{
+    color:#f50000;
+}
+/*footer******************************************************/
+#footer{
+    width:940px;
+    height: 30px;
+    background: linear-gradient(#606060, #030303);
+}
+#footerRight{
+    float: right;
+    padding-top: 1px;
+}
+#footer li{
+    text-decoration: none;
+    display: inline;
+}
+#footer a{
+    padding-right:10px;
+    font-size: 10px;
+    color: #cccccc;  
+}
+#footer li a:hover {
+    color:#cccccc !important;
+    text-decoration: underline !important;
+}
+#footerLeft{
+    float: left;
+    padding-left: 40px;
+    padding-top: 1px;
+    color: #cccccc;
+}
+#declare{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*classList******************************************************/
+.dotSelect{
+    background-color:#fff;
+    transition:all 1s;
+}
+.fadeIn {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 0.5s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 0.5s;
+  animation:fadeIn ease-in 0.5s;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
