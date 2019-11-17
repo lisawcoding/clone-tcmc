@@ -175,6 +175,7 @@ a:hover, .myactive{
     background-color: #bbb;
     border-radius: 10%;
     display: inline-block;
+    line-height: 18px;
 }
 .videos{
     float:left;
@@ -185,6 +186,7 @@ a:hover, .myactive{
     border-radius: 5%;
     display: inline-block;
     cursor:pointer;
+    line-height: 18px;
 }
 .videos:hover{
     color:red;
