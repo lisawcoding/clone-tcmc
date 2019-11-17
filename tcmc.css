@@ -386,10 +386,10 @@ a:hover, .myactive{
     width:940px;
     height: 30px;
     background: linear-gradient(#606060, #030303);
+    line-height: 30px;
 }
 #footerRight{
     float: right;
-    padding-top: 1px;
 }
 #footer li{
     text-decoration: none;
@@ -406,8 +406,6 @@ a:hover, .myactive{
 }
 #footerLeft{
     float: left;
-    padding-left: 40px;
-    padding-top: 1px;
     color: #cccccc;
 }
 #declare{
