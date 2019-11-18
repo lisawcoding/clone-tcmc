@@ -387,9 +387,11 @@ a:hover, .myactive{
     height: 30px;
     background: linear-gradient(#606060, #030303);
     line-height: 30px;
+    display: flex;
+    align-items: center;
 }
 #footerRight{
-    float: right;
+    margin-right: 1%;
 }
 #footer li{
     text-decoration: none;
@@ -405,7 +407,7 @@ a:hover, .myactive{
     text-decoration: underline !important;
 }
 #footerLeft{
-    float: left;
+    margin-left: 1%;
     color: #cccccc;
 }
 #declare{
