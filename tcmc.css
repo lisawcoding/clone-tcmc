@@ -285,11 +285,12 @@ a:hover, .myactive{
     letter-spacing:2px;
     text-decoration: none;
     font-size:1rem;
+    margin: 0;
     margin-bottom: 12px;
+    display: inline;
 }
 #div3 h5 span{
     float:right;
-    margin-right: 100px
 }
 #div3 #previous, #next{
     width:30px;
