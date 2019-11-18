@@ -290,7 +290,7 @@ a:hover, .myactive{
     display: inline;
 }
 #div3 h5 span{
-    float:right;
+    margin: 0;
 }
 #div3 #previous, #next{
     width:30px;
@@ -299,6 +299,10 @@ a:hover, .myactive{
     border:1px solid #fff;
     border-radius: 5px 0 0 5px;
     cursor: pointer;
+}
+#div3 h5 {
+    display: flex;
+    align-items: center;
 }
 #div3 #next{
     border-radius: 0 5px 5px 0;
